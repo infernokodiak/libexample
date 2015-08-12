@@ -1,0 +1,18 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  require_chef_omnibus: 12.4.1
+  attributes:
+    testkitchen: true
+    mysql:
+      server_root_password: 'mysql_test'
+platforms:
+  - name: centos-6.6
+
+suites:
+  - name: default
+    run_list:
+      - recipe[libexample::default]

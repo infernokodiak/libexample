@@ -1,0 +1,21 @@
+DEPENDENCIES
+  libexample
+    path: .
+    metadata: true
+
+GRAPH
+  al_agents (1.0.2)
+    line (>= 0.0.0)
+    rsyslog (>= 0.0.0)
+    selinux_policy (>= 0.0.0)
+  libexample (0.1.0)
+    al_agents (>= 0.0.0)
+    mysql (~> 5.6.0)
+  line (0.6.2)
+  mysql (5.6.3)
+    yum-mysql-community (>= 0.0.0)
+  rsyslog (2.1.0)
+  selinux_policy (0.7.2)
+  yum (3.6.3)
+  yum-mysql-community (0.1.17)
+    yum (>= 3.0)
